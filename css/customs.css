@@ -22,6 +22,10 @@ p {
 	text-align: justify;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .scroll-fixed {
 	height: 100%;
 	width: 100%;
@@ -40,8 +44,8 @@ p {
 }
 
 .right-img-enquery {
-	background: #ffffff none repeat scroll 0 0;
-	color: #000000;
+	background: #95b9a3 none repeat scroll 0 0;
+	color: #ffffff;
 	cursor: pointer;
 	float: right;
 	font-family: Helvetica;
@@ -54,8 +58,13 @@ p {
 	text-align: center;
 	transform: rotate(-90deg);
 	width: 180px;
+	text-transform: uppercase;
 	border-radius: 5px 5px 2px 0px;
 	letter-spacing: 1px;
+}
+
+.right-img-enquery:hover {
+	color: #ffffff;
 }
 
 
@@ -230,14 +239,15 @@ p {
 	height: 100vh!important;
 	width: 100%;
 }
-.banslide-items h3{
-    /*margin-top: 450px;*/
-    color: #fff;
-    font-size: 52px;
-    font-weight: bold;
-    position: absolute;
-    top: 45%;
-    left: 8%;
+
+.banslide-items h3 {
+	/*margin-top: 450px;*/
+	color: #fff;
+	font-size: 52px;
+	font-weight: bold;
+	position: absolute;
+	top: 45%;
+	left: 8%;
 }
 
 
@@ -273,10 +283,17 @@ p {
 	padding-left: 60px;
 	padding-bottom: 0px;
 }
-.image-section{
-    display: flex;
-    justify-content: center;
+
+.image-section {
+	display: flex;
+	justify-content: center;
 }
+
+.image-section img {
+	width: 100%;
+}
+
+
 /* section 4*/
 
 #amenities {
@@ -286,13 +303,14 @@ p {
 #amenities .row {
 	margin-top: 50px;
 }
-#amenities .col-lg-3{
-    padding-right: 40px;
+
+#amenities .col-lg-3 {
+	padding-right: 40px;
 }
 
-#amenities .col-lg-3 .borderr{
-    border-top: 2px solid #95b9a3;
-    padding-top: 30px;
+#amenities .col-lg-3 .borderr {
+	border-top: 2px solid #95b9a3;
+	padding-top: 30px;
 }
 
 #amenities .col-lg-3 img {
@@ -479,29 +497,277 @@ td {
 
 
 /* bottom form */
-.enquire-form-section{
+
+.enquire-form-section {
 	padding: 70px;
 }
-.enquire-form-section h4{
+
+.enquire-form-section h4 {
 	text-align: center;
 	font-size: 32px;
-	color: #000000;
+	color: #95b9a3;
 	font-weight: 600;
 }
-.enquire-form-section .input-data{
+
+.enquire-form-section .input-data {
 	padding-right: 30px;
 }
+
 .enquire-form-section input[type=text] {
 	background-color: #f6f7f9;
 	border: 1px solid #f6f7f9;
 	border-bottom: 1px solid #d2d3d4;
 }
+
 .enquire-form-section .submit-button button {
-	background-color: #000000;
+	background-color: #95b9a3;
 	color: white;
 	font-size: 12px;
 	padding: 55px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	margin-left: 45px;
+}
+
+
+/* slider */
+
+.slider {
+	width: 100%;
+	/* margin: 100px auto; */
+}
+
+.slider h6 {
+	color: grey;
+	padding-top: 15px;
+	font-size: 18px;
+}
+
+.slick-slide {
+	margin: 0px 10px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+	font-size: 40px;
+}
+
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: 1;
+}
+
+.slick-active {
+	opacity: 1;
+}
+
+.slick-current {
+	opacity: 1;
+}
+
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+	color: transparent;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+	opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+	opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: 'slick';
+	font-size: 20px;
+	line-height: 1;
+	background-color: transparent;
+	border-radius: 50%;
+	opacity: .75;
+	color: black;
+	padding: 12px;
+	border: 1px solid #95b9a3;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+	/*left: 1010px;*/
+	right: 13%;
+	top: -110px
+}
+
+[dir='rtl'] .slick-prev {
+	right: 13%;
+	left: auto;
+}
+
+.slick-prev:before {
+	content: '←';
+	color: #95b9a3;
+}
+
+[dir='rtl'] .slick-prev:before {
+	content: '→';
+}
+
+.slick-next {
+	top: -110px;
+	right: 5%;
+}
+
+[dir='rtl'] .slick-next {
+	right: auto;
+	right: 5%;
+}
+
+.slick-next:before {
+	content: '→';
+	color: #95b9a3;
+}
+
+[dir='rtl'] .slick-next:before {
+	content: '←';
+}
+.slick-dots li.slick-active button{
+    display: none;
+}
+
+.popup {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .75);
+	z-index: 99999;
+}
+
+.popup-inner {
+	max-width: 500px;
+	width: 80%;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 5;
+	background: #fff;
+}
+
+.popu_form h2 {
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: #95b9a3;
+}
+
+a.popup-close {
+	width: 30px;
+	height: 30px;
+	padding-top: 4px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: ease 0.25s all;
+	-webkit-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+	border-radius: 1000px;
+	background-color: #95b9a3;
+	font-family: Arial, Sans-Serif;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100%;
+	color: #fff;
+}
+
+.popu_form .form-control {
+	color: #000;
+	height: auto!important;
+	background: transparent;
+	padding: 15px 0;
+	border-radius: 0;
+	border: none;
+	font-size: 14px;
+	border-bottom: 1px solid #ced4da!important;
+	box-shadow: none;
+	outline: none;
+}
+
+.popu_form .btn {
+	width: 120px;
+	padding: 10px 15px;
+	display: block;
+	height: 40px;
+	margin: 20px auto 0;
+	outline: none;
+	border: 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	transition: all ease-in-out 0.3s;
+	background: #95b9a3;
+	cursor: pointer;
+	border-radius: 0px;
+	color: #fff;
+}
+
+.carousel-item {
+	height: 80vh;
+}
+
+.carousel-image-content {
+	position: absolute;
+	top: 30%;
+	bottom: 0;
+	right: 5%;
+	background-color: #91b9a1;
+	width: 28%;
+	padding: 40px;
+	color: white;
+}
+
+.carousel-image-content p {
+	color: white;
+	line-height: 2em;
+	text-align: justify;
 }

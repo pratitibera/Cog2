@@ -6,11 +6,24 @@
 		padding: 40px;
 	}
 	#amenities .col-lg-3 {
-	    padding-right: 10px;
-	    
+		padding-right: 10px;
 	}
 	#amenities .col-lg-3 img {
-	    width: 100%;
+		width: 100%;
+	}
+	.slick-prev:before,
+	.slick-next:before {
+		font-size: 20px;
+		padding: 8px;
+	}
+	.carousel-image-content {
+		width: 35%;
+	}
+	.carousel-image-content p {
+		line-height: 1.5em;
+	}
+	.carousel-control-prev {
+		left: 77%;
 	}
 }
 
@@ -46,7 +59,16 @@
 		padding: 20px;
 	}
 	.navbar-brand-image {
-	    width: 30%;
+		width: 30%;
+	}
+}
+
+@media(max-width:872px) {
+	.carousel-image-content {
+		width: 40%;
+	}
+	.carousel-control-prev {
+		left: 75%;
 	}
 }
 
@@ -74,8 +96,31 @@
 		width: 100%;
 		max-height: 40vh;
 	}
-	.carousel-indicators{
-	    top: 75px;
+	.carousel-indicators {
+		top: 75px;
+	}
+	.slick-prev,
+	.slick-next {
+		top: -70px
+	}
+	.carousel-image-content {
+		top: 0;
+		right: 0;
+		width: 40%;
+	}
+	.carousel-image-content h3 {
+		font-size: 14px;
+	}
+	.carousel-image-content p {
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+	.carousel-control-prev-icon:before,
+	.carousel-control-next-icon:before {
+		font-size: 16px;
+	}
+	.carousel-control-prev {
+		left: 77%;
 	}
 }
 
@@ -83,34 +128,73 @@
 	.banslide-items {
 		height: 50vh!important;
 	}
+	.banslide-items h3 {
+		font-size: 20px;
+		margin-top: -50px;
+	}
 	.immenu-header .navbar-brand {
 		padding-left: 15px;
 	}
 	#amenities .col-lg-3 {
-	    padding-right: 10px;
-	    
+		padding-right: 10px;
 	}
 	#amenities .col-lg-3 img {
-	    width: 100%;
+		width: 100%;
 	}
 	#contact .form {
-	    padding: 45px;
-	    
+		padding: 45px;
 	}
 	#amenities .col-lg-3 p {
-    font-size: 14px;
-	line-height: 20px;
-	padding-right: 20px;
+		font-size: 14px;
+		line-height: 20px;
+		padding-right: 20px;
+	}
+	.carousel-image-content {
+		top: 0%;
+		width: 35%;
+		padding: 20px;
+	}
+	.slick-prev,
+	[dir='rtl'] .slick-prev {
+		right: 15%;
+	}
+	.carousel-control-prev {
+		left: 75%;
+	}
 }
+
+@media(max-width:500px) {
+	.carousel-image-content {
+		top: 0%;
+		width: 40%;
+		padding: 20px;
+	}
+	.carousel-control-prev-icon:before,
+	.carousel-control-next-icon:before {
+		font-size: 12px;
+	}
+	.slick-prev,
+	[dir='rtl'] .slick-prev {
+		right: 18%;
+	}
+	.form .input-data {
+		margin-top: 40px;
+	}
+	#price-list {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }
 
 @media(max-width:400px) {
-	.carousel-inner {
-		width: 100%;
-		height: 30vh;
+	.carousel-image-content {
+		right: 0;
 	}
-	.carousel-inner img {
-		width: 100%;
-		max-height: 30vh;
+	.carousel-control-prev {
+		left: 71%;
+	}
+	.carousel-image-content p {
+		font-size: 11px;
+		line-height: 1.25em;
 	}
 }
